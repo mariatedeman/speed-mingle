@@ -1,1 +1,1 @@
-# mingelbingo
+# speed-mingle
