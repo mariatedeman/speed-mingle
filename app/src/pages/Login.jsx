@@ -3,7 +3,7 @@ import { useLinkedIn } from 'react-linkedin-login-oauth2';
 
 export default function LinkedInLogin() {
     const { linkedinLogin } = useLinkedIn({
-        clientId: 'DIN_CLIENT_ID_HÄR',
+        clientId: import.meta.env.VITE_LINKEDIN_CLIENT_ID,
         redirectUri: `${window.location.origin}/login`, // Måste matcha portalen!
         onSuccess: (code) => {
             console.log("Här är din kod:", code);
