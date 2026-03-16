@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLinkedIn } from 'react-linkedin-login-oauth2';
 
-function LinkedInLogin() {
+export default function LinkedInLogin() {
     const { linkedinLogin } = useLinkedIn({
         clientId: 'DIN_CLIENT_ID_HÄR',
         redirectUri: `${window.location.origin}/login`, // Måste matcha portalen!
@@ -15,8 +15,11 @@ function LinkedInLogin() {
     });
 
     return (
-        <button onClick={linkedinLogin}>
-            Logga in med LinkedIn
-        </button>
+        <div>
+            <h1>hej</h1>
+            <button onClick={linkedinLogin}>
+                Logga in med LinkedIn
+            </button>
+        </div>
     );
 }

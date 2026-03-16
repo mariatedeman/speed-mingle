@@ -1,7 +1,8 @@
 import { LinkedInCallback } from 'react-linkedin-login-oauth2';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LinkedInLogin from './pages/Login';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
